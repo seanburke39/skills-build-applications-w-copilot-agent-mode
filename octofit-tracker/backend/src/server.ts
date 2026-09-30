@@ -10,10 +10,14 @@ const apiBaseUrl = codespaceName
 app.use(express.json());
 
 app.get('/api/users', (_request, response) => response.json([]));
+<<<<<<< HEAD
 app.get('/api/teams', (_request, response) => response.json([]));
 app.get('/api/activities', (_request, response) => response.json([]));
 app.get('/api/leaderboard', (_request, response) => response.json([]));
 app.get('/api/workouts', (_request, response) => response.json([]));
+=======
+app.get('/api/activities', (_request, response) => response.json([]));
+>>>>>>> 5d630e8 (Commit 3)
 
 app.listen(port, '0.0.0.0', () => {
   console.log(`Octofit API listening on ${apiBaseUrl}`);
